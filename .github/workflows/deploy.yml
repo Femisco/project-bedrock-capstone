@@ -27,7 +27,11 @@ jobs:
             --name project-bedrock-cluster
 
       - name: Install Helm
-        uses: azure/setup-helm@v4
+        uses: azure/setup-helm@v4      
+      
+      - name: Build Helm dependencies
+        run: |
+          helm dependency build ./chart
 
       - name: Deploy with Helm
         run: |
