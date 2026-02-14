@@ -1,0 +1,21 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Sensitive files
+*.pem
+*.key
+
+# Terraform lock file (optional keep, but safe to ignore)
+.terraform.lock.hcl
+
+# Mac / Linux junk
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Node (if any)
+node_modules/
